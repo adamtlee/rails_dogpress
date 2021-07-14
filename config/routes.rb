@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :academies
+  resources :trainers
   resources :clients
   resources :dogs
   devise_for :users
