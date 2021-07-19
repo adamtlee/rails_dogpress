@@ -1,5 +1,5 @@
 FactoryBot.define do
-    factory :academy do
+    factory :trainer do
       name { Faker::Games::Pokemon.name }
       address { Faker::Games::Pokemon.location }
     end
