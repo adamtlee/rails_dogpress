@@ -1,24 +1,34 @@
-# README
+# Finport (Legacy Stocker) 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Dogpress is a management system to manage customers and dogs
+- db diagram: https://dbdiagram.io/d/60c2a9770c1ff875fcd45bcb
 
-Things you may want to cover:
+## Instructions
+Clone the repository:   
+```
+git clone https://github.com/adamtlee/dogpress.git
+```
+cd into the directory: 
+```
+cd dogpress/
+```
+install the gem dependencies:
+```
+bundle install
+```
+Run the existing migrations:
+```
+bundle exec rails db:migrate
+```
+install webpacker:
+```
+bundle exec rails webpacker:install
+```
+run the server: 
+```
+rails s 
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Resources
+development url: [https://desolate-reaches-76673.herokuapp.com/](https://desolate-reaches-76673.herokuapp.com/)
+Trello Board: Pending
