@@ -1,4 +1,4 @@
-# Finport (Legacy Stocker) 
+# Dogpress 
 
 Dogpress is a management system to manage customers and dogs
 - db diagram: https://dbdiagram.io/d/60c2a9770c1ff875fcd45bcb
