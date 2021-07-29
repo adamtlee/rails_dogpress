@@ -3,6 +3,14 @@
 Dogpress is a management system to manage customers and dogs
 - db diagram: https://dbdiagram.io/d/60c2a9770c1ff875fcd45bcb
 
+## Resources
+- development url: [https://desolate-reaches-76673.herokuapp.com/](https://desolate-reaches-76673.herokuapp.com/)
+- Trello Board: [https://trello.com/b/URHQIAyE/dogpress](https://trello.com/b/URHQIAyE/dogpress)
+
+## Dependencies
+- Ruby v3.0.1
+- Rails v6.1.4
+
 ## Instructions
 Clone the repository:   
 ```
@@ -29,6 +37,3 @@ run the server:
 rails s 
 ```
 
-## Resources
-development url: [https://desolate-reaches-76673.herokuapp.com/](https://desolate-reaches-76673.herokuapp.com/)
-Trello Board: Pending
