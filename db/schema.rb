@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_14_194228) do
+ActiveRecord::Schema.define(version: 2021_07_30_030529) do
 
   create_table "academies", force: :cascade do |t|
     t.string "name"
@@ -36,6 +36,10 @@ ActiveRecord::Schema.define(version: 2021_07_14_194228) do
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "age"
+    t.string "gender"
+    t.string "coat_length"
+    t.string "size"
   end
 
   create_table "trainers", force: :cascade do |t|
