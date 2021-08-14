@@ -11,16 +11,22 @@
 
   <body>
   <div>
-    <%= yield %>
   <% if user_signed_in? %>
-    <li>
-      <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
-    </li>
+    <%= render 'layouts/navbar' %>
+    <%= render 'layouts/dashboard' %>
+      <div id="layoutSidenav_content">
   <% else %>
+    <br /><br />
     <li>
       <%= link_to('Login', new_user_session_path) %>  
     </li>
   <% end %>
+    <div class= "container">
+      <%= yield %>
+    </div>
+      <%= render 'layouts/footer' %>
+    </div>
+
 </div>
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
