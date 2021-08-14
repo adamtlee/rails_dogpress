@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
-
+<main>
 <div class="card mb-4">
   <div class="card-header">
       <i class="fas fa-table me-1"></i>
-      <h1>Trainers</h1>
+      <h1><center>Trainers</center></h1>
   </div>
   <div class="card-body">
-    <table id="datatablesSimple">
+    <table id="datatablesSimple" class= "dataTable-table">
       <thead>
         <tr>
           <th>Full name</th>
@@ -15,7 +15,6 @@
           <th colspan="3"></th>
         </tr>
       </thead>
-
       <tbody>
         <% @trainers.each do |trainer| %>
           <tr>
@@ -31,7 +30,7 @@
     </table>
   </div>
 </div>
-
+</main>
 <br>
 
 <%= link_to 'New Trainer', new_trainer_path, class: "btn btn-outline-dark" %>

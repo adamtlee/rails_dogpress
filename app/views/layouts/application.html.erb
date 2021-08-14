@@ -9,26 +9,21 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-  <div>
-  <% if user_signed_in? %>
-    <%= render 'layouts/navbar' %>
-    <%= render 'layouts/dashboard' %>
-      <div id="layoutSidenav_content">
-  <% else %>
-    <br /><br />
-    <li>
-      <%= link_to('Login', new_user_session_path) %>  
-    </li>
-  <% end %>
-    <div class= "container">
-      <%= yield %>
-    </div>
-      <%= render 'layouts/footer' %>
-    </div>
+    <body>
+      <div>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <% if user_signed_in? %>
+        <%= render 'layouts/navbar' %>
+        <%= render 'layouts/dashboard' %>
+          <div id="layoutSidenav_content">
+      <% end %>
+        <div class= "container">
+          <%= yield %>
+        </div>
+          <%= render 'layouts/footer' %>
+        </div>
 
-</div>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+    </div>
   </body>
 </html>

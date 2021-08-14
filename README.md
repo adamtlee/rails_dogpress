@@ -1,11 +1,10 @@
 # Dogpress 
 
-Dogpress is a management system to manage customers and dogs
-- db diagram: https://dbdiagram.io/d/60c2a9770c1ff875fcd45bcb
-
+Dogpress is a management system to manage clients, trainers, academies, and dogs
 ## Resources
-- development url: [https://desolate-reaches-76673.herokuapp.com/](https://desolate-reaches-76673.herokuapp.com/)
 - Trello Board: [https://trello.com/b/URHQIAyE/dogpress](https://trello.com/b/URHQIAyE/dogpress)
+- db diagram: [https://dbdiagram.io/d/60c2a9770c1ff875fcd45bcb](https://dbdiagram.io/d/60c2a9770c1ff875fcd45bcb)
+- development url: [https://desolate-reaches-76673.herokuapp.com/](https://desolate-reaches-76673.herokuapp.com/)
 
 ## Dependencies
 - Ruby v3.0.1
