@@ -9,20 +9,21 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-  <div>
-    <%= yield %>
-  <% if user_signed_in? %>
-    <li>
-      <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
-    </li>
-  <% else %>
-    <li>
-      <%= link_to('Login', new_user_session_path) %>  
-    </li>
-  <% end %>
-</div>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+    <body>
+      <div>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <% if user_signed_in? %>
+        <%= render 'layouts/navbar' %>
+        <%= render 'layouts/dashboard' %>
+          <div id="layoutSidenav_content">
+      <% end %>
+        <div class= "container">
+          <%= yield %>
+        </div>
+          <%= render 'layouts/footer' %>
+        </div>
+
+    </div>
   </body>
 </html>

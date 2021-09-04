@@ -1,52 +1,55 @@
-<%= form_with(model: dog) do |form| %>
-  <% if dog.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(dog.errors.count, "error") %> prohibited this dog from being saved:</h2>
 
-      <ul>
-        <% dog.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <div class ="container"> 
+    <%= form_with(model: dog) do |form| %>
+      <% if dog.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(dog.errors.count, "error") %> prohibited this dog from being saved:</h2>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
+          <ul>
+            <% dog.errors.each do |error| %>
+              <li><%= error.full_message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
 
-  <div class="field">
-    <%= form.label :breed %>
-    <%= form.text_field :breed %>
-  </div>
+      <div class="field">
+        <%= form.label :name %>
+        <%= form.text_field :name, class: 'form-control'%>
+      </div>
 
-  <div class="field">
-    <%= form.label :age %>
-    <%= form.text_field :age %>
-  </div>
+      <div class="field">
+        <%= form.label :breed %>
+        <%= form.text_field :breed, class: 'form-control' %>
+      </div>
 
-  <div class="field">
-    <%= form.label :gender %>
-    <%= form.text_field :gender %>
-  </div>
+      <div class="field">
+        <%= form.label :age %>
+        <%= form.text_field :age , class: 'form-control'%>
+      </div>
 
-  <div class="field">
-    <%= form.label :coat_length %>
-    <%= form.text_field :coat_length %>
-  </div>
+      <div class="field">
+        <%= form.label :gender %>
+        <%= form.text_field :gender, class: 'form-control' %>
+      </div>
 
-  <div class="field">
-    <%= form.label :size %>
-    <%= form.text_field :size %>
-  </div>
+      <div class="field">
+        <%= form.label :coat_length %>
+        <%= form.text_field :coat_length, class: 'form-control' %>
+      </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description %>
-  </div>
+      <div class="field">
+        <%= form.label :size %>
+        <%= form.text_field :size, class: 'form-control' %>
+      </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+      <div class="field">
+        <%= form.label :description %>
+        <%= form.text_field :description, class: 'form-control' %>
+      </div>
+
+      <div class="actions">
+        <%= form.submit %>
+      </div>
+    <% end %> 
+  </div> 
