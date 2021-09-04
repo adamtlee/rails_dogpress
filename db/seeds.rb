@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'csv'
+
+CSV.foreach(Rails.root.join('db/data/trainers.csv'), headers: true) do |row|
+    Trainer.create({
+        first_name: row["first_name"],
+        last_name: row["last_name"]
+    })
+end
