@@ -9,15 +9,18 @@ Dogpress is a management system to manage clients, trainers, academies, and dogs
 ## Dependencies
 - Ruby v3.0.1
 - Rails v6.1.4
+- Yarn
+- Webpacker
+- Devise
 
 ## Instructions
 Clone the repository:   
 ```
-git clone https://github.com/adamtlee/dogpress.git
+git clone https://github.com/adamtlee/rails_dogpress.git
 ```
 cd into the directory: 
 ```
-cd dogpress/
+cd rails_dogpress/
 ```
 install the gem dependencies:
 ```
